@@ -3,6 +3,7 @@ package com.example.triviaappclone;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
@@ -65,6 +66,19 @@ public class MainActivity extends AppCompatActivity {
             checkAnswer(false);
             updateQuestion();
         });
+
+        binding.shareButton.setOnClickListener(view -> shareScore());
+    }
+
+    private void shareScore() {
+
+        String message = "My current score is "+ score.getScore() + " and "+
+                "My highest score is "+ prefs.getHighestScore();
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "I am playing Trivia");
+        intent.putExtra(Intent.EXTRA_TEXT, message);
+        startActivity(intent);
     }
 
     private void getNextQuestion() {

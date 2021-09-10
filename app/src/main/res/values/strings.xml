@@ -9,4 +9,5 @@
     <string name="incorrect_answer">Incorrect answer</string>
     <string name="text_formatted">Question: %d/%d</string>
     <string name="highest_score">Highest:</string>
+    <string name="share_results">Share my results</string>
 </resources>

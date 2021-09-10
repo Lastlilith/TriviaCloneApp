@@ -118,5 +118,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textViewOutOf"
             app:layout_constraintTop_toBottomOf="@+id/scoreTextView" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="54dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/oval"
+            android:contentDescription="@string/share_results"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonNext"
+            app:srcCompat="@drawable/ic_baseline_share_24"
+            tools:ignore="SpeakableTextPresentCheck" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

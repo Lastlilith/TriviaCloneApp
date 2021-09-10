@@ -10,4 +10,5 @@
     <color name="green">#009130</color>
     <color name="light_gray_txt_color">#898888</color>
     <color name="button_text_color">#0D9B7B</color>
+    <color name="button_share_color">#11152A</color>
 </resources>
